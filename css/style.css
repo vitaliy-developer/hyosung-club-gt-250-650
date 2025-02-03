@@ -6,12 +6,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden; /* Прибирає горизонтальний скрол */
 }
 
 header .logo {
     width: 150px;
     margin: 20px auto;
     display: block;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .intro {
@@ -68,7 +78,14 @@ header .logo {
 .prev { left: 10px; }
 .next { right: 10px; }
 
-/* Адаптація для мобільних пристроїв */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background: #f1f1f1;
+    position: relative;
+}
+
 @media (max-width: 768px) {
     .intro {
         padding: 10px;
@@ -88,5 +105,6 @@ header .logo {
         padding: 15px;
         font-size: 14px;
         text-align: center;
+        position: relative;
     }
 }
