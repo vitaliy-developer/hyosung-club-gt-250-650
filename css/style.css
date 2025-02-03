@@ -83,4 +83,10 @@ header .logo {
     .prev, .next {
         padding: 5px;
     }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
+        text-align: center;
+    }
 }
